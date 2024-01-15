@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import style from './eventCard.module.css'
+import Button from '../UI/Button.jsx'
 
 const EventCard = ({ event }) => {
     const formattedDate = new Date(event.date).toLocaleDateString('en-US', { day: '2-digit', month: "short", year: "numeric" })
@@ -20,7 +21,7 @@ const EventCard = ({ event }) => {
                     </div>
                 </div>
                 <div className={style.actions}>
-                    <Link href={`/events/${event.id}`}>Explore</Link>
+                    <Button link={`/events/${event.id}`} >Explore</Button>
                 </div>
             </div>
         </li>
