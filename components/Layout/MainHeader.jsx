@@ -11,7 +11,7 @@ const MainHeader = () => {
             <nav className={style.navigation}>
                 <ul>
                     <li>
-                        <Link href='/event'>Browse All Events</Link>
+                        <Link href='/events'>Browse All Events</Link>
                     </li>
                 </ul>
             </nav>
